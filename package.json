@@ -1,6 +1,9 @@
 {
   "name": "shipping-label-maker",
   "version": "0.1.0",
+  "description": "This application is a demonstration of coding skills by the author for Sapient Publicis",
+  "author": "Surbhi Verma",
+  "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
