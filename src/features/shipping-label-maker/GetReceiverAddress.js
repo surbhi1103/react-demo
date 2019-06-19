@@ -9,7 +9,7 @@ const formStyles = {
 export default function GetReceiverAddress(props) {
   const context = useContext(WizardContext);
   const handleChange = e => {
-    const key = e.target.name;
+    const key = e.target.id;
     const value = e.target.value;
     props.onChange([key, value]);
   };
@@ -24,7 +24,7 @@ export default function GetReceiverAddress(props) {
           <input
             className="form-control"
             type="text"
-            name="name"
+            id="name"
             onChange={handleChange}
             value={context.context.to.name}
           />
@@ -38,7 +38,7 @@ export default function GetReceiverAddress(props) {
           <input
             className="form-control"
             type="text"
-            name="street"
+            id="street"
             onChange={handleChange}
             value={context.context.to.street}
           />
@@ -52,7 +52,7 @@ export default function GetReceiverAddress(props) {
           <input
             className="form-control"
             type="text"
-            name="city"
+            id="city"
             onChange={handleChange}
             value={context.context.to.city}
           />
@@ -64,7 +64,7 @@ export default function GetReceiverAddress(props) {
           <input
             className="form-control"
             type="text"
-            name="state"
+            id="state"
             onChange={handleChange}
             value={context.context.to.state}
           />
@@ -76,7 +76,7 @@ export default function GetReceiverAddress(props) {
           <input
             className="form-control"
             type="text"
-            name="zip"
+            id="zip"
             onChange={handleChange}
             value={context.context.to.zip}
           />

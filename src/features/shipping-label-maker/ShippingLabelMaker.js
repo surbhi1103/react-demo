@@ -59,7 +59,7 @@ class ShippingLabelMaker extends React.Component {
       <div className="shipping-label">
         {/* <button onClick={this.calculateCost}>click</button> */}
         {this.state.printLabel ? (
-          <ShippingLabel />
+          <ShippingLabel label={this.ShippingInfo} cost={this.calculateCost} />
         ) : (
           <Wizard
             wizardContext={this.ShippingInfo}
